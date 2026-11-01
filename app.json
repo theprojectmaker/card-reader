@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Card Reader",
+    "slug": "card-reader",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cardreader",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0D12",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.solyapps.cardreader",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleDisplayName": "Card Reader"
+      }
+    },
+    "android": {
+      "package": "com.solyapps.cardreader",
+      "permissions": [
+        "android.permission.NFC"
+      ]
+    },
+    "web": {
+      "output": "single",
+      "backgroundColor": "#0B0D12"
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "Card Reader reads the ID and details of NFC cards and tags you hold to your phone. It never writes to them.",
+          "includeNdefEntitlement": false,
+          "selectIdentifiers": [
+            "325041592E5359532E4444463031",
+            "A0000000031010",
+            "A0000000041010",
+            "A00000002501",
+            "A0000001523010",
+            "D2760000850101",
+            "D2760000850100",
+            "A0000002471001",
+            "A000000308",
+            "A0000006472F0001",
+            "A0000005272101",
+            "A000000396564341"
+          ],
+          "systemCodes": [
+            "0003",
+            "8008",
+            "FE00",
+            "12FC",
+            "88B4",
+            "927A"
+          ]
+        }
+      ]
+    ],
+    "splash": {
+      "backgroundColor": "#0B0D12",
+      "image": "./assets/icon.png",
+      "resizeMode": "contain"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "69f3a33e-b2d5-496a-b0f9-987094445730"
+      }
+    },
+    "owner": "solomonsasson"
+  }
+}
